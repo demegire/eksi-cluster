@@ -1,3 +1,5 @@
+[Başlık ayrım önerileri, sondan 35'e kadar bakıldı](https://eksisozluk.com/baslik-ayrimi-onerileri--5556790?p=35)
+
 **ayrilmis basliklar**
 
 - kurban
@@ -6,10 +8,18 @@
 
 **ayrilmamis basliklar**
 
-- antidepresan
+- antidepresan - ilaç/şarkı
 
-- euphoria
+- euphoria - dizi/film
 
-- dursun özbek
+- dursun özbek - futbolcu/iş adamı
 
-- itiraf
+- itiraf - film/konsept
+
+- acı gerçekler -şarkı/konsept
+
+- körlük - hastalık/kitap
+
+- the fall - müzik grubu/film
+
+
