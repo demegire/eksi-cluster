@@ -1,0 +1,30 @@
+"
+    bir `scripting` dili.&#13;
+  "
+"
+    sonbahar 1994'de rasmus lerdorf tarafindan geli$tirilen preprocessing language.. [http://www.php.net/ http://www.php.net/]
+"
+"
+    asp mantigi sahibi guzel kola filan cgi sekli<br/>4. te abarmislar&#13;
+  "
+"
+    fazla bir$ey yapmasi beklenmeyen `database` ile cali$an `web` uygulamalari icin `birebir`.&#13;
+  "
+"
+`asp`'nin eline rahat rahat verebilen programlama dili... sevin ([http://www.php.org.tr/ http://www.php.org.tr/])
+  "
+"
+    kabul görmesi için `asp`nin eline vermesi gerekmeyen, oldukça hızlı olmasına rağmen hala `scripting` dili olmanın getirdiği zayıflıkları taşıyan bir `web programlama dili`. oldukça büyük sitelar design etmek için rahatça kullanılabilir velakin `asp` ile yarıştırmak pek anlamlı değildir.&#13;
+  "
+"
+    fevkalade trajikomik sinirlamalari yuzunden uzun uzun dokuman okutturan durduk yerde zaman kaybettiren, arkasinda dana gibi `interpreter` durdugu icin '`c`'nin scripting versiyonu' gibi tanimlama yerine ""`c` gorunumlu `basic`""'i daha fazla hakettigini du$undugum (yapisal olarak da) http_post_vars'i capital, cookie/header gibi `http` zaaflarindan dolayi `html` output'tan once i$lem zorunlulugu koydurgaci. `source`'u ozel bir metod izlenmese bile a$iri derli toplu gozukur.&#13;
+  "
+"
+    neredeyse akla gelecek her işlem için bir fonksiyon vardır. php ile site geliştiren biri kendini dünyanın hakimi hissetmese de işi çabuk biter, gider sonra top falan oynar. ama müthiş zevklidir `o ayrı`. ayrıca `mysql` ile kapı komşusudurlar, siyamdırlar.&#13;
+  "
+"
+    php + apache + mysql uclusunun bir ogesi. kolay, beles ve performans bakimindan doruklarda web siteleri olusturabilir. php dili asp gibidir fakat cok daha sadedir. c ye benzer fakat onun kadar karmasik degildir. perl bilenler phpyi oturup yarim saatte kavrayabilir, o kadar benzer yani. asp + iis + sql server uclusune rahat fark atar.
+  "
+"
+    (bkz: `phb`)&#13;
+  "
