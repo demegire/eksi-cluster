@@ -4,7 +4,7 @@ import csv
 import os
 
 
-async def getTopic(topic):
+async def write_topic(topic):
     eksi = eksipy.Eksi()
     topic = await eksi.getTopic(topic)
     entries = await topic.getEntrys()
@@ -19,9 +19,15 @@ async def getTopic(topic):
     #    for row in csv_reader:
     #        print(row)
 
+async def get_topic(topic):
+    eksi = eksipy.Eksi()
+    topic = await eksi.getTopic(topic)
+    entries = await topic.getEntrys()
+    
+    return [entry.text() for entry in entries]
 
-loop = asyncio.get_event_loop()
-loop.run_until_complete(getTopic('php'))
+#loop = asyncio.get_event_loop()
+#loop.run_until_complete(getTopic('php'))
 
 
 
