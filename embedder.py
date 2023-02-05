@@ -5,7 +5,7 @@ import os
 import numpy as np
 from openai.embeddings_utils import get_embedding
 
-def embedderEksi(df, column_to_embed):
+def embedderEksi(df):
     # keys
     openai.organization = ""
     openai.api_key = ""
@@ -16,6 +16,6 @@ def embedderEksi(df, column_to_embed):
     max_tokens = 8000  # the maximum for text-embedding-ada-002 is 8191
     
     # embedding 
-    df["embedding"] = df.column_to_embed.apply(lambda x: get_embedding(x, engine=embedding_model))
+    df["embedding"] = df.translation.apply(lambda x: get_embedding(x, engine=embedding_model))
 
     return df

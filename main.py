@@ -3,6 +3,7 @@ import pandas as pd
 
 from scrape import get_topic
 from translate import translate
+from embedder import embedderEksi
 
 async def main():
     
@@ -13,6 +14,9 @@ async def main():
     for i in range(len(df)):
         df.iloc[i, 1] = translate(df.iloc[i,0])
     print(df)
+    df = embedderEksi(df)
+    #print(df.iloc[2,2])
+    
     return df
 
 loop = asyncio.get_event_loop()
