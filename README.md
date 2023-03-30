@@ -3,7 +3,7 @@ Tool for clustering polysemantic eksisozluk.com page entries
 
 **To Do**
 
-- [ ] clustering
-- [ ] validation
+- [x] clustering
+- [x] validation
 - [ ] text processing to get rid of scraping artifacts
 
