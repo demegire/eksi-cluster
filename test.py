@@ -12,14 +12,18 @@ from sklearn.cluster import KMeans
 
 async def main():
     
-    df = await get_topic('php',1,5)
+    #loop = asyncio.get_event_loop()
+    df = await get_topic('harun tekin (futbolcu)',1,2)
+    df_2 = await get_topic('harun tekin (müzisyen)',1,2)
+    df["label"] = 0
+    df_2["label"] = 1
+    df = df.append(df_2,ignore_index=True)
     df['translation'] = df['entry']
+
     for i in range(len(df)):
-        df.iloc[i, 1] = translate(df.iloc[i,0])
-    print(df)
+        df.iloc[i, 2] = translate(df.iloc[i,0])
     df = embedderEksi(df)
     matrix = np.vstack(df.embedding.values)
-    matrix.shape
     
     # clustering
     
@@ -29,10 +33,9 @@ async def main():
     kmeans.fit(matrix)
     labels = kmeans.labels_
     df["Cluster"] = labels
-    
-    print(df['Cluster'])
+    df.drop(columns=['embedding'],inplace=True)
+    df.to_csv('data/{}.csv'.format('harun_tekin'),index=False,encoding='utf-8')
 
-    
     return df
 
 asyncio.run(main())
