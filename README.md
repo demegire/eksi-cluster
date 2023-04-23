@@ -7,6 +7,8 @@
 - [x] validation
 - [ ] text processing to get rid of scraping artifacts
 
+# Testing
+
 **Method**
 
 50 entries per topic were drawn from the already separated topic (100 entries in total per topic). These entries were shuffled and re-separated through our model.
