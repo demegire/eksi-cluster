@@ -1,5 +1,5 @@
 # eksi-cluster
-Tool for clustering polysemantic eksisozluk.com page entries
+[Ekşisözlük](eksisozluk.com/) is the most popular Turkish social media website, which is organized like a dictionary; users create 'titles' and others write 'entries' under it like a thread. However the title might be the same for two different things, for example there is a footballer Harun Tekin and a musician Harun Tekin. Currently users of the website report such titles to the moderation who then seperate hundreds of entries manually. We present eksicluster as a tool for automatically clustering polysemantic eksisozluk.com. 
 
 **To Do**
 
