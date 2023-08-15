@@ -1,25 +1,18 @@
 import eksipy
-import asyncio
 import pandas as pd
 
-async def write_topic(topic,start_page,end_page):
+async def get_topic(topic_name, start_page, end_page):
+    
     eksi = eksipy.Eksi()
-    topic = await eksi.getTopic(topic)
-    df = pd.DataFrame(columns=['entry'])
-    for page in range(start_page,end_page+1):
-        entries = await topic.getEntrys(page)
-        for entry in entries:
-            df = df.append({'entry':entry.text()},ignore_index=True)
-    df.to_csv('data/{}.csv'.format(topic),index=False,encoding='utf-8')
+    eksi.eksi = "https://eksisozluk1923.com/"
+    topic = await eksi.getTopic(topic_name)
 
-async def get_topic(topic,start_page,end_page):
-    eksi = eksipy.Eksi()
-    topic = await eksi.getTopic(topic)
-    df = pd.DataFrame(columns=['entry'])
-    for page in range(start_page,end_page+1):
+    all_entries = []
+    for page in range(start_page, end_page + 1):
         entries = await topic.getEntrys(page)
         for entry in entries:
-            df = df.append({'entry':entry.text()},ignore_index=True)
+            all_entries.append(entry.text())
+
+    df = pd.DataFrame(all_entries, columns=['entry'])
+
     return df
-
-# asyncio.run(write_topic("php",1,10))
