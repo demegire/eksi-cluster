@@ -1,6 +1,6 @@
 # eksi-cluster
 
-[Ekşisözlük](eksisozluk.com/) is the most popular Turkish social media website, which is organized like a dictionary; users create 'titles' and others write 'entries' under it like a thread. However the title (topic) might be homonymous, for example there is a footballer Harun Tekin and a musician Harun Tekin. Currently, users of the website [report](https://eksisozluk1923.com/baslik-ayrimi-onerileri--5556790) such titles to the moderation who then seperate hundreds of entries manually. We present eksicluster as a tool for automatically clustering these titles. Clustering is not only useful for this purpose, feel free to play with this tool and maybe find new uses.
+[Ekşisözlük](eksisozluk.com/) is the most popular Turkish social media website, which is organized like a dictionary; users create 'titles' and others write 'entries' under it like a thread. However the title (topic) might be homonymous, for example there is a footballer Harun Tekin and a musician Harun Tekin. Currently, users of the website [report](https://eksisozluk1923.com/baslik-ayrimi-onerileri--5556790) such titles to the moderation who then seperate hundreds of entries manually. We present eksicluster as a tool for automatically clustering these titles. Clustering is not only useful for this purpose, feel free to play with this tool and maybe find new uses. This tool is for helping out ekşisözlük moderators as a preprocessor for title seperation, it is not meant to replace them.
 
 **Usage**
 
@@ -44,13 +44,13 @@ We tried directly embedding Turkish text and found out that this approach does n
 
 **Results**
 
-| Topic 1  | Topic 2 | Accuracy Score | F1 Score
-| ------------- | ------------- | --------- | -------- |
-| harun tekin (football player) | harun tekin (musician) | 0.92 | 0.92 |
-| koray avcı (football player)  | koray avcı (musician) | 0.97 | 0.97 |
-| dart | dart (programming language) | 0.57 | 0.68 |
-| suskunlar (series) | suskunlar (book) | 0.96 | 0.96 |
-| camel (music group) | camel (cigarette) | 0.94 | 0.93 |
-| aydın | aydın (city) | 0.58 | 0.67 |
+| Topic 1  | Topic 2 | F1 Score
+| ------------- | ------------- | -------- |
+| harun tekin (football player) | harun tekin (musician) | 0.92 |
+| koray avcı (football player)  | koray avcı (musician) | 0.93 |
+| dart | dart (programming language) | 0.85 |
+| suskunlar (series) | suskunlar (book) | 0.94 |
+| camel (music group) | camel (cigarette) | 0.93 |
+| aydın | aydın (city) | 0.88 |
 
-As can be seen from the results, the tool is able to distinguish between sufficiently different titles with high accuracy, but if one of the titles is a more encompassing title such as dart, it may be insufficient in the separation due to the variety of information in that title.
+As can be seen from the results, the tool is able to distinguish between sufficiently different titles with high accuracy, but if one of the titles is a more encompassing title such as dart, it may be insufficient due to the variety of information in that title.
