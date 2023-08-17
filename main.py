@@ -6,6 +6,7 @@ from sklearn.cluster import KMeans
 from scrape import get_topic
 from translate import translate
 from embedder import embed
+from visualize import visualize
 
 async def cluster_topic(topic_name, n_clusters, start_page, end_page, df=None):
 
@@ -41,9 +42,12 @@ async def main():
     end_page =  int(sys.argv[4])
 
     df = await cluster_topic(topic_name, n_clusters, start_page, end_page)
+
+    plt = visualize(df)
+    plt.show()
+
     df = df.drop(columns=['embedding'])
     print(df.head())
-
     print('Cluster Distribution: ')
     print(df['predicted_cluster'].value_counts())
 
